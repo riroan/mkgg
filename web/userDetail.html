@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href ="{% static 'detail_style.css' %}">
+{% endblock %}
+{% block content %}
+{% if user %}
+
+<h1>{{user.userName}}</h1>
+<img src ={{iconImg}} />
+<p>레벨 : {{user.summonerLevel}}</p>
+<p>갱신된 시간 : {{user.updateDate}}</p>
+<table>
+    <tr>
+        <td>솔랭</td>
+        <td>자유랭</td>
+    </tr>
+    <tr>
+        <td>
+            <ul>
+                <li>{{user.soloTier}}</li>
+                <li>{{user.soloLeaguePoint}} pt</li>
+                <li>{{user.soloWins}} 승</li>
+                <li>{{user.soloLosses}} 패</li>
+            </ul>
+        </td>
+        <td>
+            <ul>
+                <li>{{user.flexTier}}</li>
+                <li>{{user.flexLeaguePoint}} pt</li>
+                <li>{{user.flexWins}} 승</li>
+                <li>{{user.flexLosses}} 패</li>
+            </ul>
+        </td>
+    </tr>
+</table>
+<p>위 유저의 정보가 틀림이 없다.</p>
+<form method = "post">
+    <input type = "button" value = "Update" />
+</form>
+
+{% else %}
+<p>그런사람 없습니다.</p>
+{% endif %}
+{% endblock %}

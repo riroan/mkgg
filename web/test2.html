@@ -1,0 +1,24 @@
+<h1>이름 : {{user.userName}}</h1>
+<ul>
+    <li>솔랭티어 : {{user.soloTier}}</li>
+    <li>포인트 : {{user.soloLeaguePoint}}</li>
+    <li>승 : {{user.soloWins}}</li>
+    <li>패 : {{user.soloLosses}}</li>
+</ul>
+<hr>
+호우
+
+{% if matches %}
+
+<br>
+    {% for match in matches%}
+<ul>
+    <li>gameId : {{match.gameId}}</li>
+    <li>championId : {{match.champion}}</li>
+    <li>season : {{match.season}}</li>
+    <li>timestamp : {{match.timestamp}}</li>
+    <li>role : {{match.role}}</li>
+</ul>
+<hr>
+    {% endfor %}
+{% endif %}

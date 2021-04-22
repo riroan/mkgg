@@ -1,0 +1,13 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+config
+db.sqlite3
+.idea
+*.pyc
+__pycache__
+*.npy
+*.xlsx
+
+static
+jsonfile
+models

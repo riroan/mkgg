@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" type="text/css" href ="{% static 'basic_style.css' %}">
+{% endblock %}
+{% block content %}
+<header>
+            <!--<img src="https://placeimg.com/600/300/any">-->
+</header>
+<section id="search">
+    <form autocomplete="off" method = "post" action = "{% url 'search:searchUser' %}">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input name = "userName" type="text"  />
+        <input id = "btn" type = "submit" value = "Go">
+    </form>
+    <a href="{% url 'search:searchCreate' %}">검색창 열기</a>
+</section>
+{% endblock %}

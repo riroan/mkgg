@@ -1,0 +1,14 @@
+{% if matches %}
+<h1>이름 : 우리팀이 짱이야</h1>
+<br>
+    {% for match in matches%}
+<ul>
+    <li>gameId : {{match.gameId}}</li>
+    <li>championId : {{match.champion}}</li>
+    <li>season : {{match.season}}</li>
+    <li>timestamp : {{match.timestamp}}</li>
+    <li>role : {{match.role}}</li>
+</ul>
+<hr>
+    {% endfor %}
+{% endif %}
