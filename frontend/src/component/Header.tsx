@@ -6,6 +6,7 @@ const Header = ()=> {
     return (
         <Back>
             <img src="http://placehold.it/150x75" alt="logo" />
+            <hr />
             <Form>
                 <Input type="text" />
                 <Button type="submit">
@@ -28,6 +29,7 @@ const Back = styled.div`
 const Form = styled.form`
     display:flex;
     align-items:center;
+    margin: 10px;
 `
 
 const Input = styled.input`
