@@ -10,8 +10,8 @@ const User=()=> {
                 <Button>전적 갱신</Button>
             </div>
             <div>
-                <UserInfo>소환사 이름 : </UserInfo>
-                <UserInfo>소환사 레벨 : </UserInfo>
+                <UserInfo>[소환사 이름]</UserInfo>
+                <UserInfo>[소환사 레벨]</UserInfo>
             </div>
             <Rank />
             <Rank />
@@ -24,6 +24,7 @@ export default User;
 const UserInfo = styled.span`
     display : block;
     margin : 10px;
+    font-size:0.7rem;
 `
 
 const Img = styled.img`
@@ -32,6 +33,7 @@ const Img = styled.img`
 
 const Back = styled.div`
     display:flex;
+    justify-content:center;
     background-color: cyan;
     padding : 5px;
 `
