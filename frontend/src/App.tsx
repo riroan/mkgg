@@ -2,7 +2,7 @@ import React from 'react';
 import Header from './component/Header';
 import User from './component/User';
 import Recent from './component/Recent';
-import Daily from './component/Daily';
+// import Daily from './component/Daily';
 import Most from './component/Most';
 import Match from './component/Match';
 
@@ -15,13 +15,20 @@ const App = ()=> {
       <User />
       <Recent />
       {/* <Daily /> */}
-      <Match />
-      <Most />
+      <Div>
+        <Match />
+        <Most />
+      </Div>
     </Back>
   );
 }
 
 export default App;
+
+const Div = styled.div`
+  display:flex;
+  
+`
 
 const Back = styled.div`
   width : 1000px;
