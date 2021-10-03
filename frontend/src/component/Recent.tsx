@@ -11,7 +11,7 @@ const Champ=()=>{
                 <span>1.5/1.5/1.5(2.0)</span>
                 <span>CS : 39</span>
             </ChampDiv>
-    );
+    )
 }
 
 const RecentWin=()=>{
@@ -70,6 +70,9 @@ const Badge=()=>{
     return (
         <RecentBadge>
             <span>뱃지</span>
+            <BadgeSpan>퍼블러</BadgeSpan>
+            <BadgeSpan>학살자</BadgeSpan>
+            <BadgeSpan>딜킹</BadgeSpan>
         </RecentBadge>
     )
 }
@@ -90,6 +93,11 @@ const Recent=()=> {
 }
 
 export default Recent;
+
+const BadgeSpan = styled.span`
+    background-color:black;
+    color:white;
+`
 
 const RecentBadge = styled.div`
     display:flex;
