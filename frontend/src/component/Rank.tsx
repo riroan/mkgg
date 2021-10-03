@@ -12,6 +12,8 @@ const Rank=() => {
             <Inner content={false}>
                 <Img src="http://placehold.it/125x125" alt="tier" />
                 <Inner content={true}>
+                    <Span>랭킹 : 123,456위(5.0%)</Span>
+                    <Span>리그 : 가렌의 특공대</Span>
                     <Span>골드 4 (48p)</Span>
                     <Span>300승 300패(50%)</Span>
                 </Inner>
