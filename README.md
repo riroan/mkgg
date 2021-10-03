@@ -5,3 +5,4 @@
 - Frontend : react, TypeScript
 - Backend : FastAPI
 - DB : PostgreSQL, ElasticSearch 중에 고민중 
+- Cloud : AWS
